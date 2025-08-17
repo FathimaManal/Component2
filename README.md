@@ -2,7 +2,7 @@
 
 A modern, accessible, and customizable React UI component library built with TypeScript, Tailwind CSS, and Storybook. This library provides a comprehensive set of reusable components designed for rapid application development.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **React 18** - Modern React with hooks and concurrent features
 - **TypeScript** - Full type safety and excellent developer experience
@@ -12,7 +12,7 @@ A modern, accessible, and customizable React UI component library built with Typ
 - **Jest & Testing Library** - Comprehensive testing framework
 - **ESLint** - Code quality and consistency
 
-## ✨ Features
+##  Features
 
 - ✅ **Fully Typed**: Built with TypeScript for excellent developer experience
 - ✅ **Tailwind CSS**: Utility-first styling with custom design tokens
@@ -77,13 +77,13 @@ import { DataTable } from 'react-ui-components';
 
 **Features**: Sorting, row selection, loading states, empty states, responsive design
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install react-ui-components
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```tsx
 import React from 'react';
@@ -109,7 +109,7 @@ function App() {
 }
 ```
 
-## 🎯 Storybook
+## Storybook
 
 Explore all components interactively with Storybook:
 
@@ -174,7 +174,7 @@ Deploy to GitHub Pages for free hosting:
 npm run deploy-storybook
 ```
 
-### 🚀 Deployment Scripts
+###  Deployment Scripts
 
 Add these scripts to your `package.json`:
 
@@ -192,7 +192,7 @@ Add these scripts to your `package.json`:
 
 📖 **For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md)**
 
-## 🧪 Testing
+##  Testing
 
 Run the comprehensive test suite:
 
@@ -207,7 +207,7 @@ The library includes tests for:
 - Edge cases
 - Responsive behavior
 
-## 🛠️ Development
+## 🛠 Development
 
 ### Setup
 
@@ -241,7 +241,7 @@ npm run lint
 - `npm run lint:fix` - Fix ESLint issues
 - `npm run build` - Build the library
 
-## 🎨 Customization
+##  Customization
 
 ### Tailwind CSS
 
@@ -275,7 +275,7 @@ Override component styles with CSS custom properties:
 }
 ```
 
-## 📱 Responsive Design
+## Responsive Design
 
 All components are built with mobile-first responsive design:
 
@@ -283,7 +283,7 @@ All components are built with mobile-first responsive design:
 - **Tablet**: Adaptive layouts for medium screens
 - **Desktop**: Full-featured experience for large screens
 
-## ♿ Accessibility
+## Accessibility
 
 The library follows WCAG 2.1 AA guidelines:
 
@@ -293,15 +293,9 @@ The library follows WCAG 2.1 AA guidelines:
 - **Semantic HTML**: Proper HTML structure
 - **Color Contrast**: Meets accessibility standards
 
-## 🌐 Browser Support
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- IE11+ (with polyfills)
 
-## 📚 Documentation
+## Documentation
 
 - **Storybook**: Interactive component examples
 - **TypeScript**: Full type definitions
@@ -309,14 +303,6 @@ The library follows WCAG 2.1 AA guidelines:
 - **Examples**: Real-world usage examples
 - **Accessibility**: A11y guidelines and testing
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests and stories
-5. Update documentation
-6. Submit a pull request
 
 ### Development Guidelines
 
@@ -327,17 +313,17 @@ The library follows WCAG 2.1 AA guidelines:
 - Use Tailwind CSS for styling
 - Follow React best practices
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
+##  Support
 
 - **Issues**: [GitHub Issues](https://github.com/your-repo/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/your-repo/discussions)
 - **Documentation**: [Storybook](http://localhost:6006)
 
-## 📝 Changelog
+##  Changelog
 
 ### 1.0.0
 - Initial release
