@@ -1,0 +1,255 @@
+/* DataTable Container */
+.datatable-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Table Styles */
+.datatable-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+/* Header Styles */
+.datatable-header-cell {
+  background: #f8f9fa;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #495057;
+  border-bottom: 2px solid #dee2e6;
+  position: relative;
+  user-select: none;
+  transition: background-color 0.2s ease;
+}
+
+.datatable-header-cell.sortable {
+  cursor: pointer;
+}
+
+.datatable-header-cell.sortable:hover {
+  background: #e9ecef;
+}
+
+.datatable-header-cell.sortable:focus {
+  outline: 2px solid #007bff;
+  outline-offset: -2px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sort-indicator {
+  font-size: 12px;
+  color: #6c757d;
+  margin-left: 8px;
+}
+
+.datatable-header-cell.sort-asc .sort-indicator,
+.datatable-header-cell.sort-desc .sort-indicator {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Row Styles */
+.datatable-row {
+  border-bottom: 1px solid #dee2e6;
+  transition: background-color 0.2s ease;
+}
+
+.datatable-row:hover {
+  background: #f8f9fa;
+}
+
+.datatable-row.selected {
+  background: #e3f2fd;
+}
+
+.datatable-row.selected:hover {
+  background: #bbdefb;
+}
+
+/* Cell Styles */
+.datatable-cell {
+  padding: 12px 16px;
+  color: #212529;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.select-cell {
+  width: 48px;
+  text-align: center;
+}
+
+.select-cell input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Loading State */
+.datatable-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  color: #6c757d;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e9ecef;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Empty State */
+.datatable-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: #6c757d;
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.datatable-empty h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #495057;
+}
+
+.datatable-empty p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .datatable-container {
+    font-size: 14px;
+  }
+  
+  .datatable-header-cell,
+  .datatable-cell {
+    padding: 8px 12px;
+  }
+  
+  .datatable-table {
+    display: block;
+  }
+  
+  .datatable-table thead {
+    display: none;
+  }
+  
+  .datatable-table tbody {
+    display: block;
+  }
+  
+  .datatable-row {
+    display: block;
+    margin-bottom: 16px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 12px;
+  }
+  
+  .datatable-cell {
+    display: block;
+    text-align: left;
+    border: none;
+    padding: 4px 0;
+    position: relative;
+  }
+  
+  .datatable-cell::before {
+    content: attr(data-label) ": ";
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  .select-cell {
+    width: auto;
+    text-align: left;
+  }
+  
+  .select-cell::before {
+    content: "Select: ";
+  }
+}
+
+/* Focus and Accessibility */
+.datatable-row:focus-within {
+  outline: 2px solid #007bff;
+  outline-offset: -2px;
+}
+
+.datatable-cell:focus {
+  outline: 2px solid #007bff;
+  outline-offset: -2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .datatable-container {
+    border: 2px solid #000;
+  }
+  
+  .datatable-header-cell {
+    background: #000;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .datatable-row {
+    border-bottom: 1px solid #000;
+  }
+  
+  .datatable-row:hover {
+    background: #333;
+    color: #fff;
+  }
+  
+  .datatable-row.selected {
+    background: #0066cc;
+    color: #fff;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .datatable-header-cell,
+  .datatable-row {
+    transition: none;
+  }
+  
+  .loading-spinner {
+    animation: none;
+  }
+} 
