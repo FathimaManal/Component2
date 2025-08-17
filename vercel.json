@@ -1,23 +1,6 @@
 {
   "buildCommand": "npm run build-storybook",
   "outputDirectory": "storybook-static",
-  "framework": null,
   "installCommand": "npm install",
-  "devCommand": "npm run storybook",
-  "functions": {
-    "storybook-static/**": {
-      "maxDuration": 30
-    }
-  },
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
-  ]
-} 
+  "devCommand": "npm run storybook"
+}

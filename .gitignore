@@ -1,0 +1,9 @@
+chromatic.json
+jest.config.js
+DEPLOYMENT.md
+README.md
+*.test.*
+*.spec.*
+/__tests__/
+/tests/
+.storybook/
